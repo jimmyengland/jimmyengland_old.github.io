@@ -1,61 +1,116 @@
 @import url('https://fonts.googleapis.com/css?family=Helvetica|open+sans');
-
 :root {
     --primary-color: #43573C;
     --secondary-color: #333333;
     --accent1-color: #454545;
     --accent2-color: white;
     --heading-font: "open sans";
-    --paragraph-font: Helvetica
+    --paragraph-font: Helvetica:
 }
 
 html {
     background-color: var(--primary-color);
-    
-}
-
-
-
-header, nav, main, footer, body {
-    max-width: 960px;
-    margin: 0 auto;
     text-align: center;
 }
 
-header{
+main {
+    background-color: var(--secondary-color);
+    
+}
+
+header {
     background-color: var(--secondary-color);
     color: white;
     border: 1px solid #333;
     padding: 10px;
-    font: var(--heading-font)
-    
-}
-
-nav{
-text-align: left;
+    font: var(--heading-font);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header img {
-    width: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 100px;
     height: auto;
-    border: 1px solid black;
-    box-shadow: 0 0 30px #ccc;
+    
+    
+}
+
+.motto {
+    font-style: italic;
+    color: forestgreen;
+    font-size: 1.5rem;
+    letter-spacing: 1.5pt;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    font-family: "News Cycle";
+    font-size: 1rem;
+}
+
+li {
+    display: block;
+    text-align: center;
+    float: right;
+    padding: 0 0 0 150px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: lightgreen;
+    
+    
 }
 
 body {
-    background-color: var(--accent2-color);
-    font-size 16px;
-    font: var(--paragraph-font)
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    font: var(--paragraph-font);
+    max-width: 960px;
+    margin: auto;
+}
+
+.picture {
+    text-align: center;
+    padding-top: 25px;
 }
 
 h2 {
+    font-size: 2rem;
     color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
-main {
+p {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    padding-left: 50px;
+}
+
+p.closing {
+    font-family: cursive;
+}
+
+footer {
     background-color: var(--accent1-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-nav a:link, nav a:visited {
-    color: white
+.social {
+    padding-left: 400px;
 }
