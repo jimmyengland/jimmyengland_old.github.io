@@ -68,11 +68,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: left;
-    background-color: lightgreen;
+    background-color: var(--primary-color);
     
     
 }
-
+nav a {
+    color: white;
+    text-decoration: none;
+}
 body {
     background-color: var(--secondary-color);
     font-size: 16px;
@@ -84,6 +87,10 @@ body {
 .picture {
     text-align: center;
     padding-top: 25px;
+}
+
+h1 {
+    margin: 0em;
 }
 
 h2 {
