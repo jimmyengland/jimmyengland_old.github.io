@@ -25,7 +25,8 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color:}
+    
+}
 
 header {
     padding: 1em;
@@ -77,10 +78,10 @@ p {
 }
 
 nav {
-    background-color:var(--secondary-color)
+    background-color:var(--secondary-color);
     line-height: 3em;
     text-align: center;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 nav>ul {
@@ -93,11 +94,9 @@ nav a {
     min-width: 70px
 }
 
-nav a:link, nav a:visited {
-    color:
-}
+
 
 nav a:hover {
     color: var(--primary-color) ;
-    background-color:
+    
 }
