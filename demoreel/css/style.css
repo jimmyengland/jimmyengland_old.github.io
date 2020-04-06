@@ -11,7 +11,6 @@
 html {
     background-color: var(--primary-color);
     text-align: center;
-    
 }
 
 header {
@@ -55,10 +54,18 @@ a:hover {
     background-color: var(--primary-color);
 }
 
-video {
-     max-width: 100%; height: auto; 
-    }
+.demo {
+    padding-bottom: 56.25%;
+    position: relative;
+    display: block;
+    width: 100%;
+}
 
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .contact {
     background-color: var(--primary-color);
@@ -113,8 +120,6 @@ video {
     top: 0;
 }
 
-
-
 form {
     /* Center the form on the page */
     margin: 5px auto;
@@ -147,22 +152,18 @@ label {
     text-align: right;
 }
 
-input,
-textarea {
+input, textarea {
     /* To make sure that all text fields have the same font settings
     By default, textareas have a monospace font */
     font: 1em sans-serif;
-
     /* Uniform text field size */
     width: 300px;
     box-sizing: border-box;
-
     /* Match form field borders */
     border: 1px solid #999;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
     /* Additional highlight for focused elements */
     border-color: #000;
 }
@@ -170,7 +171,6 @@ textarea:focus {
 textarea {
     /* Align multiline text fields with their labels */
     vertical-align: top;
-
     /* Provide space to type some text */
     height: 5em;
 }
@@ -188,14 +188,25 @@ button {
 }
 
 footer {
-    background-color: var(--accent1-color);
-    flex: 1 1 100%;
-    text-align: left;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;  
+    font-size: 1.1rem;
+}
+
+.trademark {
+    grid-column: 1/2;
+    margin-top: 1em;
+    grid-row: 1;
+   
 }
 
 .social {
-    flex: 1 1 100%;
-    text-align: right;
+    grid-column: 3/4;
+    height: 100px;
+    line-height: 100px;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 550px) {
